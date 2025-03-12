@@ -16,9 +16,29 @@ body {
   background: #fafafa;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1168px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid red;
+}
+
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 a {
@@ -53,11 +73,13 @@ button {
 }
 
 .nav-links {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  color: #111;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-links:hover,
@@ -68,13 +90,21 @@ button {
 
 .social-list {
 }
+
 .social-list-item {
+  width: 40px;
+  height: 40px;
 }
 .social-links {
 }
 
 .hero-section {
-  background: rgba(17, 17, 17, 0.7);
+  padding-top: 380px;
+  padding-bottom: 40px;
+}
+
+.hero-section .container {
+  background-color: rgba(17, 17, 17, 0.7);
 }
 
 .hero-title {
@@ -83,6 +113,8 @@ button {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  width: 484px;
+  margin-bottom: 32px;
 }
 
 .style-button {
@@ -90,18 +122,30 @@ button {
   background-color: #fd9222;
   font-weight: 600;
   font-size: 14px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  width: 144px;
+  height: 45px;
 }
 
 .style-button:hover,
 :focus {
   color: #fd9222;
-  background: #fcf1e0;
+  background-color: #fcf1e0;
 }
 
 .review-style-button {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  display: inline-block;
+  border-radius: 100px;
+  width: 183px;
+  height: 45px;
+  padding-top: 14px;
+  padding-left: 40px;
+
+  border: 1px solid #fff;
 }
 
 .review-style-button:hover,
